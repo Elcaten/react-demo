@@ -1,0 +1,43 @@
+{
+  "separator": {
+    "prefix": "separator",
+    "body": "//-----------------------------------------------------------------------------------------------------------------------------"
+  },
+  "component": {
+    "prefix": "component",
+    "body": [
+      "import React from 'react';",
+      "",
+      "export interface $1Props {",
+      "\t",
+      "}",
+      "",
+      "export const ${1:${TM_FILENAME_BASE/(\\w+)[-^]?/${1:/pascalcase}/g}}: React.FC<$1Props> = (props) => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "Creates a React Arrow Function Component with ES7 module system and TypeScript interface"
+  },
+  "page": {
+    "prefix": "page",
+    "body": [
+      "import { RouteComponentProps } from '@reach/router';",
+      "import React from 'react';",
+      "",
+      "export const ${1:${TM_FILENAME_BASE/(\\w+)[-^]?/${1:/pascalcase}/g}}: React.FC<RouteComponentProps> = (props) => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "Creates a React Arrow Function Component with ES7 module system and TypeScript interface"
+  }
+}
