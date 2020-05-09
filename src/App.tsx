@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { useCurrentPosition } from './geolocation/use-current-position';
 import logo from './logo.svg';
+import { Weather } from './weather/weather';
 
 function App() {
     const { position, error } = useCurrentPosition();
@@ -21,6 +22,7 @@ function App() {
                     </p>
                 )}
                 {error && <p>{error.message}</p>}
+                {position && <Weather position={position} />}
             </header>
         </div>
     );

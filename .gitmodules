@@ -1,0 +1,3 @@
+[submodule "src/use-openweathermap-api"]
+	path = src/use-openweathermap-api
+	url = https://github.com/Elcaten/use-openweathermap-api

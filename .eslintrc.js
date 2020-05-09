@@ -30,6 +30,13 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': 0,
       },
     },
+    {
+      files: ['src/use-openweathermap-api/**/*.ts?(x)'],
+      rules: {
+        '@typescript-eslint/interface-name-prefix': 0,
+        '@typescript-eslint/no-unused-vars': 0,
+      },
+    },
   ],
   rules: {
     'prettier/prettier': 'error',
